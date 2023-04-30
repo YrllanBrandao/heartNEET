@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/image/bot.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/gameover.css">
+    <title>FIM DE JOGO</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            Fim de jogo, espero que tenha gostado.
+            <span class="iconify" data-icon="solar:ghost-smile-bold" style="color: #8c3fff;" data-width="100" data-height="200"></span>
+
+        
+        </p>
+        <h2>Redirecionando...em 4s</h2>
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+        <script>
+            const h2 = document.querySelector("h2");
+            let s = 4
+            const interval = setInterval(() =>{
+                h2.innerHTML = `Redirecionando em ${s}s`;
+            }, 1000)
+            setTimeout(()=>{
+                clearInterval(interval);
+            }, 3000);
+
+            window.location.href = "/credits.html";
+        </script>
+</body>
+</html>

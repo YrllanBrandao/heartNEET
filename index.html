@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/image/bot.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>HeartNET - A Resistência Começa</title>
+</head>
+<body>
+    <div class="loading">
+    </div>
+    <div class="container">
+        <p>
+            HeartNET: A Resistência Começa - criado para <a href="https://itch.io/jam/jamaberta" class="none-jam">GameJam</a>
+        </p>
+        <form  class="form-register">
+            <label for="inputName">Nome</label>
+            <input type="text" class="inputName" placeholder="Padrão - Adams" value="Adams" autocomplete="false" required maxlength="13">
+            <label for="inputLastName">Sobrenome</label>
+           <input type="text" class="inputLastName" placeholder="Padrão - Robot"  value="Robot" autocomplete="false" maxlength="15" required>
+           <button class="btn-start">
+            Iniciar Jogo
+           </button>
+           </form>
+      
+
+           <footer>
+            <a href="https://github.com/YrllanBrandao" target="_blank" class="link-footer">Yrllan Brandão &copy; 2023</a>
+           </footer>
+    </div>
+    <script>
+        localStorage.clear()
+    </script>
+    <script src="/assets/javascript/loading.js"></script>
+<script src="/assets/javascript/index.js" type="module"></script>
+</body>
+</html>

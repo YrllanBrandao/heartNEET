@@ -1,0 +1,51 @@
+@import url("./root.css");
+
+
+
+.yrllan{
+    font-size: 32px;
+    font-family: var(--poppins);
+    color: aliceblue;
+}
+
+body{
+    background: #343541;
+    font-family: var(--poppins);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 40vw;
+    height: auto;
+    border-radius: 1rem;
+}
+.card-header{
+    font-size: 30px;
+    
+}
+
+.link{
+    color: blueviolet;
+    letter-spacing: 1px;
+    font-size: 18px;
+    
+}
+
+.btn-home{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(118, 40, 190);
+    background: none;
+    position: fixed;
+    left: 1.5rem;
+    top: 1.5rem;    
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+}
+.btn-home:hover{
+    transform:scale(1.05);
+}

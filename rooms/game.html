@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/image/bot.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/level-01.css">
+    <title>HeartNET</title>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay-load">
+            <div id="result"></div>
+            <span class="iconify" data-icon="eos-icons:loading" style="color: #b0b0ba;" data-width="40"></span>
+        </div>
+        <div class="loading"></div>
+        <nav>
+            <a href="/index.html" class="start">Início</a>
+        </nav>
+        <main class="chat-area">
+          
+           <div class="area-options">
+            Responder:
+            <button class="btn-option" id="option-1">
+                text 1
+            </button>
+            <button class="btn-option" id="option-2">
+                text 2
+            </button>
+          
+           </div>
+        
+           <!-- player -->
+           <audio id="main-player" loop="true">
+            <source src="/assets/sound/theme.mp3" type="audio/mp3">
+           </audio>
+        </main>
+
+
+        <button class="btn-sound"></button>
+        
+    </div>
+
+
+
+    <!-- scripts -->
+    <script src="/assets/javascript/audio.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="/assets/javascript/loading.js"></script>
+    <script src="/assets/javascript/game.js" type="module"></script>
+</body>
+</html>

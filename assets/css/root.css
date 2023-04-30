@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+:root{
+    --noneFont: 'Darumadrop One', cursive;
+    --poppins: 'Poppins', sans-serif;
+    --botFont:  ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: var(--poppins);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #444654;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+@keyframes loading {
+    0%{
+        background: #8e9dff;
+    }
+    50%{
+        background: #6b7ef8;
+    }
+    100%{
+        background: #334efa;
+    }
+}
+.loading{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 4px;
+    animation: loading 300ms infinite;
+    transition: width 300ms ease-in;
+}
+
+.btn-sound{
+    width: 50px;
+    color: #8c3fff;
+    aspect-ratio: 1 / 1;
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    background: #191a29;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #8c3fff;
+    border-radius: 50%;
+    padding: .3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: url('https://api.iconify.design/teenyicons/sound-on-solid.svg?color=%238c3fff&width=30');
+}
+.btn-sound.muted{
+    content: url('https://api.iconify.design/teenyicons/sound-off-solid.svg?color=%238c3fff&width=30');
+}
+
+.btn-sound:hover{
+    color: #5b2ca3;
+}
+
+
+.link-footer{
+    color: aliceblue;
+    font-family: var(--poppins), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

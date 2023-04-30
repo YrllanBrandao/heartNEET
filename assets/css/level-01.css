@@ -1,0 +1,232 @@
+@import url("./root.css");
+
+
+.chat-area{
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.main-player-message,
+.player-message{
+    
+    font-size: 16px;
+    line-height: 24px;
+    color: #ececf1;
+    width: 50%;
+    height: auto;
+}
+
+.area-player-message{
+    background: #343541;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4rem;
+    gap: 1rem;
+}
+.area-bot-message{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4rem;
+    gap: 1rem;
+}
+.main-player-message{
+    height: 10vh;
+
+}
+.bot-message{
+    background: #444654;
+    color: #d1d5db;
+    font-size: 16px;
+    line-height: 28px;
+    height: auto;
+    width: 50%;
+    font-family:var(--botFont);
+    word-break: break-word;
+    text-align: left;
+    
+}
+
+.bot-profile{
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    align-self: flex-start;
+    background: #191a29;
+}
+.player-profile{
+    background: whitesmoke;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+.container{
+    flex-direction: row;
+    gap: 0;
+}
+
+.area-input-player{
+    width: 80%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   right: 0;
+   bottom: 1.5rem;
+}
+
+.pseudo-input{
+    width: 50%;
+    padding: 1rem 1.2rem;
+    border-radius: .4rem;
+    border: none;
+    box-shadow: 0 0 4px #232436;
+    outline: none;
+    display: flex;
+    background: #40414f;
+    
+}
+.input-player{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    color: #8e8ea0;
+    background: #40414f;
+}
+.input-player::placeholder{
+    color: #8e8ea0;
+}
+.btn-send{
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+ .btn-send:hover{
+    background: #191a29;
+    
+ }
+nav{
+    background: #202123;
+    width: 20vw;
+    height: 100vh;
+    color: #d1d5db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}   
+
+nav a{
+    color: #d1d5db;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in;
+}
+nav a:hover{
+    background: #2e3033f3;
+}
+/* options */
+
+.area-options{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
+    visibility:hidden;
+
+}
+.area-options-start{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
+
+}
+.area-options.active{
+    visibility: visible;
+}
+.area-options  button{
+    width: 100%;
+    background: #40414f;
+    border: none;
+    box-shadow: 0 0 4px #232436;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    color: #8e8ea0;
+    transition: all 300ms ease-in-out;
+}
+.area-options-start  button{
+    width: 100%;
+    background: #40414f;
+    border: none;
+    box-shadow: 0 0 4px #232436;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    color: #8e8ea0;
+    transition: all 300ms ease-in-out;
+}
+.area-options button:hover{
+    background: #33343f;
+    
+}
+.area-options-start button:hover{
+    background: #33343f;
+    
+}
+
+.area-options button:disabled,.area-options-start button:disabled  
+.area-options button:hover:disabled,.area-options-start button:hover:disabled{
+    background: #33343f;
+    
+}
+
+
+.overlay-load{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #191a29;
+    z-index: 888;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+}
+.overlay-load.active{
+    visibility: visible;
+}
+
+#result{
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-break: break-word;
+}
+

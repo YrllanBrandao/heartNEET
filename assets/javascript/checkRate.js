@@ -7,8 +7,7 @@ async function checkRate()
 {
     const chooseList = JSON.parse(localStorage.getItem("chooseLise"));
     const player = getPlayerName(chooseList);
-    const rate = getScore()
-    alert(rate)
+    const rate = getScore();
     const result = document.getElementById("result");
     if(rate <= 40)
     {

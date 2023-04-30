@@ -1,5 +1,5 @@
 import option from "./option.js";
-import write from "./write.min.js";
+import write from "./write.js";
 const chatArea = document.querySelector(".chat-area");
 
 

@@ -1,4 +1,4 @@
-import rates from "./rateCheck.min.js";
+import rates from "./rateCheck.js";
 
 function getScore() {
   const chooseList = JSON.parse(localStorage.getItem("chooseList"));

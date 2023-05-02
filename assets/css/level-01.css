@@ -218,6 +218,7 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
     visibility: hidden;
+    word-wrap: break-word;
 }
 .overlay-load.active{
     visibility: visible;

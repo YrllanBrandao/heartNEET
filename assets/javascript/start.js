@@ -1,4 +1,4 @@
-import write from "./write.min.js";
+import write from "./write.js";
 import { goto} from './redirect.js'
 import { getPlayerName } from "./getPlayerName.js";
 

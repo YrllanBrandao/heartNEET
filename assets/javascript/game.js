@@ -1,7 +1,8 @@
 import Message from "./message.js";
 import option from "./option.js";
-import dialogue from "./dialogue.min.js";
+import dialogue from "./dialogue.js";
 import getLastChooseOption from "./getLastOption.js";
+import checkRate from "./checkRate.js";
 
 function createStage() {
   const exist = localStorage.getItem("stage");
